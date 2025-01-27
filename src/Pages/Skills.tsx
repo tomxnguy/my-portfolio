@@ -159,7 +159,7 @@ export default function Skills() {
                 : "bg-emerald-600 text-slate-800"
             } w-full py-6 rounded-xl`}
           >
-            <h2 className="text-2xl font-semibold text-center mb-4">
+            <h2 className="text-2xl font-[Poppins] font-semibold text-center mb-4">
               {category.title}
             </h2>
 
