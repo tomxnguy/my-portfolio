@@ -3,13 +3,23 @@ import { AboutMeType } from "../data/types";
 import profilepicture from "../assets/profilepicture.png";
 import classphoto from "../assets/classphoto.jpg";
 import { motion } from "framer-motion";
+import { useDarkMode } from "../Context/useDarkMode";
 
 export default function About() {
   const about: AboutMeType = aboutMe[0];
+  const { darkMode } = useDarkMode();
 
   return (
-    <div className="bg-amber-100 min-h-screen">
-      <section className="font-sans flex flex-col items-center  bg-emerald-200 max-w-3xl mx-auto">
+    <div
+      className={`${
+        darkMode ? "bg-zinc-950 text-white" : "bg-amber-100 text-black"
+      } min-h-screen`}
+    >
+      <section
+        className={`font-sans flex flex-col items-center ${
+          darkMode ? "bg-neutral-800" : "bg-emerald-200"
+        } max-w-3xl mx-auto`}
+      >
         <motion.h1
           className="text-5xl tracking-widest font-[Urbanist] font-bold my-4 text-center rounded-2xl"
           initial={{ opacity: 0, y: -20 }}
@@ -27,7 +37,9 @@ export default function About() {
           transition={{ duration: 1.0 }}
         />
         <motion.h2
-          className="text-xl font-[Roboto] w-full font-semibold mb-2 p-4 text-center bg-orange-300"
+          className={`text-xl font-[Roboto] w-full font-semibold mb-2 p-4 text-center ${
+            darkMode ? "bg-gray-700" : "bg-orange-300"
+          }`}
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.0 }}
@@ -44,7 +56,9 @@ export default function About() {
         </motion.p>
 
         <motion.h2
-          className="text-xl font-[Roboto] w-full font-semibold mb-4 p-4 text-center bg-orange-300"
+          className={`text-xl font-[Roboto] w-full font-semibold mb-4 p-4 text-center ${
+            darkMode ? "bg-gray-700" : "bg-orange-300"
+          }`}
           initial={{ opacity: 0, x: 0 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.0 }}
@@ -81,7 +95,9 @@ export default function About() {
         </motion.ul>
 
         <motion.h2
-          className="text-xl font-[Roboto] w-full font-semibold mb-2 mt-4 p-4 text-center bg-orange-300"
+          className={`text-xl font-[Roboto] w-full font-semibold mb-2 mt-4 p-4 text-center ${
+            darkMode ? "bg-gray-700" : "bg-orange-300"
+          }`}
           initial={{ opacity: 0, x: -10 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
