@@ -17,6 +17,7 @@ export const aboutMe = [
     hobbies: [
       "Learning Python and exploring cybersecurity tools",
       "Developing personal projects to improve skills",
+      "Backpacking and Camping",
       "Playing Magic: The Gathering",
     ],
   },
