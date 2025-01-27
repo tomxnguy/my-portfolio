@@ -1,4 +1,4 @@
-# Portfolio Website
+# My Personal Portfolio Website
 
 Welcome to my personal portfolio website! This website showcases my skills, experience, and projects in web development and software engineering. It highlights my proficiency with modern web technologies like React, TypeScript, Tailwind CSS, and more.
 
