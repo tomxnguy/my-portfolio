@@ -12,7 +12,7 @@ export default function Experience() {
     >
       <h1 className="text-4xl tracking-widest font-bold mb-6">Experience</h1>
 
-      <div className="space-y-8 w-full">
+      <div className="space-y-8 w-3/4">
         {experiences.map((experience, index) => (
           <div
             key={index}
@@ -36,7 +36,7 @@ export default function Experience() {
                 <p className="text-sm mt-2">{experience.date}</p>
               </div>
 
-              <ul className="mt-4 md:mt-0 space-y-2">
+              <ul className="mt-4 ml-4 md:mt-0 space-y-2">
                 {experience.description.map((desc, descIndex) => (
                   <li key={descIndex} className="text-sm">
                     {desc}
