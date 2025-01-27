@@ -86,3 +86,48 @@ export const projects = [
     liveDemo: "http://final-project-dev2222.us-west-1.elasticbeanstalk.com/",
   },
 ];
+
+export const experiences = [
+  {
+    date: "August 2023 - January 2024",
+    role: "LearningFuze Web Dev Bootcamp Completion",
+    company: "LearningFuze",
+    location: "Irvine, CA",
+    logo: "/lfz-logo.png",
+    description: [
+      "Completed an intensive, hands-on web development bootcamp, gaining proficiency in front-end and back-end technologies, including HTML, CSS, JavaScript, React, and TypeScript.",
+      "Developed multiple full-stack applications, including a project management tool and an e-commerce platform, utilizing React for front-end development, Node.js for the backend, and MongoDB for database management.",
+      "Collaborated with fellow students on group projects, utilizing Agile methodologies, and version control (Git) to ensure timely delivery and quality of work.",
+      "Built responsive and user-friendly interfaces using Tailwind CSS, Bootstrap, and vanilla CSS, while also learning to integrate third-party APIs and focus on performance optimization.",
+    ],
+  },
+  {
+    date: "July 2017 - August 2023",
+    role: "Emergency Medical Technician",
+    company: "Falck Ambulance Inc.",
+    location: "Orange, CA",
+    logo: "/falcklogo.png",
+    description: [
+      "Collaborated closely with firefighters and nurses on an ambulance, responding to emergency medical calls, providing patient assessment, and delivering immediate care in high-pressure situations.",
+      "Assisted in administering life-saving interventions, including CPR, oxygen therapy, and medication, while maintaining calm and efficient communication with medical teams and dispatch.",
+      "Worked with diverse patients and managed a wide range of medical emergencies, including trauma, cardiac, respiratory, and neurological events, ensuring prompt and accurate treatment during transport to medical facilities.",
+      "Developed strong teamwork skills, working seamlessly with firefighters, paramedics, and hospital staff to ensure the best possible care for patients.",
+    ],
+  },
+  {
+    date: "July 2011 - July 2015",
+    role: "Bachelors in Science, Biology",
+    company: "California State University, Los Angeles",
+    location: "Los Angeles, CA",
+    logo: "/csulalogo.png",
+    description: [""],
+  },
+  {
+    date: "July 2015 - July 2016",
+    role: "Post-bacclaureate in Biotechnology",
+    company: "California State University, Los Angeles",
+    location: "Los Angeles, CA",
+    logo: "/csulalogo.png",
+    description: [""],
+  },
+];
