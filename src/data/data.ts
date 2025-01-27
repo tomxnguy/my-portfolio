@@ -32,6 +32,12 @@ export const projects = [
       to display card details and let users save their favorite cards.
     `,
     technologies: ["React", "TypeScript", "Tailwind CSS", "MTG API"],
+    images: [
+      "/spellcraftpics/spellcraft1.jpg",
+      "/spellcraftpics/spellcraft2.jpg",
+      "/spellcraftpics/spellcraft3.jpg",
+      "/spellcraftpics/spellcraft4.jpg",
+    ],
     link: "https://github.com/tomxnguy/Spell-Craft-MTGdeckbuilder",
     liveDemo: "https://mtgdeckbuilder.vercel.app",
   },
@@ -42,8 +48,14 @@ export const projects = [
       It features dynamic routing, reusable components, and a clean UI.
     `,
     technologies: ["React", "TypeScript", "Tailwind CSS", "React Router"],
+    images: [
+      "/portfoliopics/portfolio1.jpg",
+      "/portfoliopics/portfolio2.jpg",
+      "/portfoliopics/portfolio3.jpg",
+      "/portfoliopics/portfolio4.jpg",
+    ],
     link: "https://github.com/tomxnguy/my-portfolio",
-    liveDemo: "NEEDS A LINK",
+    liveDemo: "tomnguyen-portfolio.vercel.app/",
   },
   {
     name: "E-Commerce Website",
@@ -63,6 +75,12 @@ export const projects = [
       "Tailwind CSS",
       "React Router",
       "AWS Elastic Beanstalk",
+    ],
+    images: [
+      "/lfzcooppics/lfzcoop1.jpg",
+      "/lfzcooppics/lfzcoop2.jpg",
+      "/lfzcooppics/lfzcoop3.jpg",
+      "/lfzcooppics/lfzcoop4.jpg",
     ],
     link: "https://github.com/tomxnguy/ECommerce-Website",
     liveDemo: "http://final-project-dev2222.us-west-1.elasticbeanstalk.com/",
