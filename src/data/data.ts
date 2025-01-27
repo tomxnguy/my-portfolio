@@ -90,7 +90,7 @@ export const projects = [
 export const experiences = [
   {
     date: "August 2023 - January 2024",
-    role: "LearningFuze Web Dev Bootcamp Completion",
+    role: "LearningFuze Web Dev Bootcamp",
     company: "LearningFuze",
     location: "Irvine, CA",
     logo: "/lfz-logo.png",
