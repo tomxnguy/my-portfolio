@@ -1,38 +1,112 @@
 import { aboutMe } from "../data/data";
 import { AboutMeType } from "../data/types";
 import profilepicture from "../assets/profilepicture.png";
+import classphoto from "../assets/classphoto.jpg";
+import { motion } from "framer-motion";
 
 export default function About() {
   const about: AboutMeType = aboutMe[0];
 
   return (
-    <section className="font-sans flex flex-col items-center p-8">
-      <img
-        className="w-64 h-64 rounded-full mb-6"
-        src={profilepicture}
-        alt="profilepic"
-      />
-      <h1 className="text-3xl font-bold mb-4 text-center">{about.name}</h1>
-      <h2 className="text-xl font-semibold mb-2 text-center">{about.title}</h2>
-      <p className="text-md">{about.description}</p>
+    <div className="bg-amber-100 min-h-screen">
+      <section className="font-sans flex flex-col items-center  bg-emerald-200 max-w-3xl mx-auto">
+        <motion.h1
+          className="text-5xl tracking-widest font-[Urbanist] font-bold my-4 text-center rounded-2xl"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0 }}
+        >
+          {about.name}
+        </motion.h1>
+        <motion.img
+          className="w-64 h-64 rounded-full mb-6"
+          src={profilepicture}
+          alt="profilepic"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.0 }}
+        />
+        <motion.h2
+          className="text-xl font-[Roboto] w-full font-semibold mb-2 p-4 text-center bg-orange-300"
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0 }}
+        >
+          {about.title}
+        </motion.h2>
+        <motion.p
+          className="text-md p-6 font-[Poppins] text-center"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0 }}
+        >
+          {about.description}
+        </motion.p>
 
-      <h2 className="text-2xl font-semibold mt-6">Highlights</h2>
-      <ul className="list-disc list-inside ml-2 mt-2">
-        {about.highlights.map((highlight, index) => (
-          <li key={index} className="text-base">
-            {highlight}
-          </li>
-        ))}
-      </ul>
+        <motion.h2
+          className="text-xl font-[Roboto] w-full font-semibold mb-4 p-4 text-center bg-orange-300"
+          initial={{ opacity: 0, x: 0 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1.0 }}
+        >
+          Highlights
+        </motion.h2>
+        <div className="w-3/4">
+          <motion.img
+            className="rounded-md mb-2"
+            src={classphoto}
+            alt="classphoto"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.0 }}
+          />
+        </div>
+        <motion.ul
+          className="list-disc font-[Poppins] list-inside ml-2 mt-2"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1.0 }}
+        >
+          {about.highlights.map((highlight, index) => (
+            <motion.li
+              key={index}
+              className="text-base m-2"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1.0, delay: index * 0.3 }}
+            >
+              {highlight}
+            </motion.li>
+          ))}
+        </motion.ul>
 
-      <h2 className="text-2xl font-semibold mt-6">Hobbies</h2>
-      <ul className="list-disc list-inside ml-4 mt-2">
-        {about.hobbies.map((hobby, index) => (
-          <li key={index} className="text-base">
-            {hobby}
-          </li>
-        ))}
-      </ul>
-    </section>
+        <motion.h2
+          className="text-xl font-[Roboto] w-full font-semibold mb-2 mt-4 p-4 text-center bg-orange-300"
+          initial={{ opacity: 0, x: -10 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          Hobbies
+        </motion.h2>
+        <motion.ul
+          className="list-disc font-[Poppins] list-inside m-6 mt-2"
+          initial={{ opacity: 0, y: 30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          {about.hobbies.map((hobby, index) => (
+            <motion.li
+              key={index}
+              className="text-base m-2 "
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+            >
+              {hobby}
+            </motion.li>
+          ))}
+        </motion.ul>
+      </section>
+    </div>
   );
 }
