@@ -149,7 +149,7 @@ export default function Skills() {
         Skills
       </h1>
 
-      <div className="space-y-4 w-4/7 ">
+      <div className="space-y-4 w-9/10 ">
         {skills.map((category, index) => (
           <div
             key={index}

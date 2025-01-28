@@ -12,7 +12,7 @@ export default function Experience() {
     >
       <h1 className="text-4xl tracking-widest font-bold mb-6">Experience</h1>
 
-      <div className="space-y-8 w-3/4">
+      <div className="space-y-8 w-9/10">
         {experiences.map((experience, index) => (
           <div
             key={index}
