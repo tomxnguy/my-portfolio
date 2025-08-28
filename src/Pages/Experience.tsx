@@ -31,12 +31,12 @@ export default function Experience() {
             <div className="flex flex-col md:flex-row items-start md:items-center md:justify-between w-full">
               <div>
                 <h2 className="text-2xl font-bold">{experience.role}</h2>
-                <p className="text-sm font-semibold">{experience.company}</p>
+                <p className="text-sm font-semibold ">{experience.company}</p>
                 <p className="text-sm text-gray-300">{experience.location}</p>
                 <p className="text-sm mt-2">{experience.date}</p>
               </div>
 
-              <ul className="mt-4 ml-4 md:mt-0 space-y-2">
+              <ul className="mt-4 ml-4 md:mt-0 space-y-2 lg:w-5/8">
                 {experience.description.map((desc, descIndex) => (
                   <li key={descIndex} className="text-sm">
                     {desc}

@@ -68,14 +68,16 @@ export default function Projects() {
                 >
                   <FaGithub />
                 </a>
-                <a
-                  href={project.liveDemo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mx-2 hover:scale-120 hover:text-yellow-400 duration-150 ease-in-out cursor-pointer"
-                >
-                  <FaLink />
-                </a>
+                {project.liveDemo && (
+                  <a
+                    href={project.liveDemo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mx-2 hover:scale-120 hover:text-yellow-400 duration-150 ease-in-out cursor-pointer"
+                  >
+                    <FaLink />
+                  </a>
+                )}
               </div>
             </div>
 

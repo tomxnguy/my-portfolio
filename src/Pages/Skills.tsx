@@ -16,6 +16,7 @@ import {
   SiMongodb,
   SiTailwindcss,
   SiTypescript,
+  SiPrisma,
 } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { BiLogoPostgresql, BiLogoVisualStudio } from "react-icons/bi";
@@ -82,6 +83,10 @@ export default function Skills() {
           icon: (
             <BiLogoPostgresql className="text-[#336791] text-6xl md:text-7xl" />
           ),
+        },
+        {
+          name: "Prisma",
+          icon: <SiPrisma className="text-[#336791] text-6xl md:text-7xl" />,
         },
         {
           name: "MongoDB",

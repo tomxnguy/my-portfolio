@@ -1,7 +1,7 @@
 export const aboutMe = [
   {
     name: "Thomas Nguyen",
-    title: "Web Developer and Aspiring Cybersecurity Professional",
+    title: "Web Developer | Software Developer",
     description: `
     I am a driven professional with a background as an EMT and a strong passion for technology.
     After completing a coding bootcamp, I focused on building projects like "Spell Craft" and
@@ -83,11 +83,37 @@ export const projects = [
       "/lfzcooppics/lfzcoop4.jpg",
     ],
     link: "https://github.com/tomxnguy/ECommerce-Website",
-    liveDemo: "http://final-project-dev2222.us-west-1.elasticbeanstalk.com/",
+    liveDemo: "",
   },
 ];
 
 export const experiences = [
+  {
+    date: "January 2025 - Current",
+    role: "Nemonx Full Stack Developer",
+    company: "Nemonx",
+    location: "Denver, CO",
+    logo: "/nemonxlogo.png",
+    description: [
+      "Implemented dynamic multi-step forms using React while managing backend data storage and retrieval through Prisma ORM and PostgresQL.",
+      "Collaborating with cross-functional teams to design and implement new features, ensuring seamless integration with existing systems.",
+      "Created responsive customer-facing order forms to enable users and international students to create orders for transcript translations which lead to increase in Nemonx customers ",
+      "Built reusable React components managing state to handle detailed educational data entry, validation, and submission with integration to backend services.",
+    ],
+  },
+  {
+    date: "January 2025 - July 2025",
+    role: "RoutineMATH Front-End Developer",
+    company: "RoutineMath",
+    location: "San Mateo, CA",
+    logo: "/routinemathlogo.png",
+    description: [
+      "Designed and developed user interface for a math learning application using React, Node.js, and integrating REST APIs.",
+      "Implemented interactive math problem generation and custom algorithms that provided real time feedback for users.",
+      "Created reusable components that could be used for any future math development integration.",
+      "Collaborated with designers and backend developers to ensure seamless integration of front-end components with backend services.",
+    ],
+  },
   {
     date: "August 2023 - January 2024",
     role: "LearningFuze Web Dev Bootcamp",
