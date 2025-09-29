@@ -120,7 +120,7 @@ export default function Projects() {
       {isModalOpen && (
         <div
           onClick={closeModal}
-          className={`fixed top-0 left-0 z-50 w-full h-full flex items-center justify-center ${
+          className={`fixed top-0 left-0 z-50 w-full h-full flex items-center align-middle justify-center ${
             darkMode ? "bg-opacity-20" : "bg-opacity-30"
           } bg-black backdrop-blur-[0.5px]`}
         >

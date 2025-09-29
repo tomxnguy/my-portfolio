@@ -25,6 +25,19 @@ export const aboutMe = [
 
 export const projects = [
   {
+    name: "RoutineMath",
+    description:
+      "Web Application built with React and Node.js for students to practice and learn math. Users are able to generate custom math problems, track their progress, and receive real-time feedback.",
+    technologies: ["React", "TypeScript", "Tailwind CSS"],
+    images: [
+      "/routinemathpics/routineMath1.png",
+      "/routinemathpics/routineMath2.png",
+      "/routinemathpics/routineMath3.png",
+    ],
+    link: "https://github.com/tomxnguy/multiplication-tutor",
+    liveDemo: "https://routinemath.com/#/about",
+  },
+  {
     name: "Spell Craft",
     description: `
       A web application that allows users to explore and manage Magic: The Gathering cards.
